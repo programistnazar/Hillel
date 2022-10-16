@@ -14,7 +14,6 @@ while True:
     age = input('Введите возраст: ')
     if not age.isdigit() or int(age) <= 0:
         print('Ошибка, повторите ввод')
-        continue
     elif int(age) < 10:
         print('Привет, шкет', name.title())
     elif int(age) <= 18:
