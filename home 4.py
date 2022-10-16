@@ -15,11 +15,11 @@ while True:
     if not age.isdigit() or int(age) <= 0:
         print('Ошибка, повторите ввод')
         continue
-    elif 0 < int(age) < 10:
+    elif int(age) < 10:
         print('Привет, шкет', name.title())
-    elif 10 < int(age) < 18:
+    elif int(age) <= 18:
         print(f'Как жизнь, {name.title()}?')
-    elif 18 < int(age) < 100:
+    elif int(age) < 100:
         print(f'Что желаете {name.title()}?')
     else:
         print(f'{name.title()}, вы лжете - в наше время столько не живут...')
