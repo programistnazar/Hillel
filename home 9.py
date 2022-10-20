@@ -7,14 +7,14 @@ t = [2, 3, 4, 3, 2, 5]
 d = {}
 
 
-def analysis(t, d):
-    for i in t:
-        if i in d:
-            d[i] += 1
+def analysis(x, y):
+    for i in x:
+        if i in y:
+            y[i] += 1
         else:
-            d[i] = 1
-    for item in d:
-        print("%d: %d" % (item, d[item]))
+            y[i] = 1
+    for i in y:
+        print("%d: %d" % (i, y[i]))
 
 
 analysis(t, d)
