@@ -14,7 +14,7 @@ def analysis(t, d):
         else:
             d[i] = 1
     for item in d:
-        print("'%d' :%d" % (item, d[item]))
+        print("%d :%d" % (item, d[item]))
 
 
 analysis(t, d)
