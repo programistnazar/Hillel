@@ -13,7 +13,7 @@ def analysis(t, d):
             d[i] += 1
         else:
             d[i] = 1
-    for item in sorted(d):
+    for item in d:
         print("'%d' :%d" % (item, d[item]))
 
 
