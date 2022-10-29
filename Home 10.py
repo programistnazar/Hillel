@@ -10,8 +10,8 @@ def my_decorator(a_function):
         time = datetime.now()
         a_function()
         time_2 = datetime.now() - time
-        print('Время начала виполнения функции: ', time)
-        print('Время продолжительности виполнения функции: ', time_2)
+        print('Время начала выполнения функции: ', time)
+        print('Продолжительность выполнения функции: ', time_2)
 
     return cars()
 
