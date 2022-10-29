@@ -8,15 +8,20 @@ a = 'nv'
 b = 'nv'
 c = 'nv'
 print(a == b == c)
-print(id(a) == id(b) == id(c))
+print(a is b is c)
 
 d = [5]
 e = [5]
 print(d == e)
-print(id(d) == id(e))
+print(d is e)
 
 print(list(a) == list(b) == list(c))
-print(id(list(a)) == id(list(b)) == id(list(c)))
+print(list(a) is list(b) is list(c))
 print(str(d) == str(e))
+print(str(d) is str(e))
 print(id(str(d)) == id(str(e)))
-print(type(d))
+print(id(d))
+print(id(e))
+
+print(id(str(d)))
+print(id(str(e)))
