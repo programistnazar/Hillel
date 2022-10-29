@@ -5,7 +5,7 @@
 # time = datetime.now()
 
 def my_decorator(a_function):
-    def cars():
+    def timer():
         from datetime import datetime
         time = datetime.now()
         a_function()
@@ -13,7 +13,7 @@ def my_decorator(a_function):
         print('Время начала выполнения функции: ', time)
         print('Продолжительность выполнения функции: ', time_2)
 
-    return cars()
+    return timer()
 
 
 @my_decorator
