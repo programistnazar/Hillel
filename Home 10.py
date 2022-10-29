@@ -13,7 +13,7 @@ def my_decorator(a_function):
         print('Время начала выполнения функции: ', time)
         print('Продолжительность выполнения функции: ', time_2)
 
-    return timer()
+    return timer
 
 
 @my_decorator
@@ -26,6 +26,7 @@ def cor():
     print(int(1+2+4))
 
 
-
+wars()
+cor()
 
 
