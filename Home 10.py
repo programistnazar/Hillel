@@ -3,10 +3,11 @@
 # Подсказка:
 # from datetime import datetime
 # time = datetime.now()
+from datetime import datetime
+
 
 def my_decorator(a_function):
     def timer():
-        from datetime import datetime
         time = datetime.now()
         a_function()
         time_2 = datetime.now() - time
