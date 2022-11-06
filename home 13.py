@@ -24,7 +24,7 @@
 
 def my_num(a):
     a = a.replace(',', '.')
-    if a.lstrip('-').isdigit():
+    if a.replace('-', '', 1).isdigit():
         a = int(a)
         if int(a) > 0:
             return f'Вы ввели положительное целое число: {a}'
@@ -32,7 +32,7 @@ def my_num(a):
             return f'Вы ввели целое число: {a}'
         else:
             return f'Вы ввели отрицательное целое число: {a}'
-    if a.lstrip('-').replace('.', '').isdigit():
+    if a.replace('-', '', 1).replace('.', '', 1).isdigit():
         a = float(a)
         if float(a) > 0:
             return f'Вы ввели  дробное число: {a}'
