@@ -13,7 +13,7 @@ my_dict = {
     666665: ("Gag", 25),
 }
 
-with open('task.jason', 'w') as f:
+with open('task.json', 'w') as f:
     json.dump(my_dict, f)
 
 
