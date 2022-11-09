@@ -5,44 +5,17 @@
 
 import json
 
-my_dict = [
-    {
-        666661: (
-            {
-                "Name": "Gul",
-                "age": 21
-            }
-        ),
-        666662: (
-            {
-                "Name": "Gag",
-                "age": 22
-            }
-        ),
-        666663: (
-            {
-                "Name": "Gor",
-                "age": 23
-            }
-        ),
-        666664: (
-            {
-                "Name": "Gim",
-                "age": 24
-            }
-        ),
-        666665: (
-            {
-                "Name": "Gon",
-                "age": 25
-            }
-        ),
-    }
-]
+my_dict = {
+    666661: ("Gul", 21),
+    666662: ("Gor", 22),
+    666663: ("Gim", 23),
+    666664: ("Gon", 24),
+    666665: ("Gag", 25),
+}
+
 
 with open('task.jason', 'w') as f:
     json.dump(my_dict, f)
-
 
 
 
