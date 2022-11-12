@@ -14,10 +14,10 @@ sheet = wb['Первый лист']
 for items, row in enumerate(file_reader):
     for col_index, value in enumerate(row):
         if col_index < 2:
-            cell = sheet.cell(row=items+1, column=col_index+1)
+            cell = sheet.cell(row=col_index+1, column=items+1)
             cell.value = value
         if col_index > 2:
-            cell = sheet.cell(row=items+1, column=col_index)
+            cell = sheet.cell(row=col_index, column=items+1)
             cell.value = value
 
 wb.save('task_2.xlsx')
